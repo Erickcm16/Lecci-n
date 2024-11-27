@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>SportsBet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="welcome">
+    <h2>¡Bienvenido a SportsBet!</h2>
+    <p>Selecciona un evento y realiza tu apuesta.</p>
+  </div>
+
+  <!-- Encuentros deportivos -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Fútbol: Liverpool vs Real Madrid</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Cantidad a apostar ($1 - $1000):</ion-label>
+        <ion-input
+          type="number"
+          [(ngModel)]="betAmountFootball"
+          min="1"
+          max="1000"
+          placeholder="Introduce tu apuesta">
+        </ion-input>
+      </ion-item>
+      <ion-button color="success" expand="block" (click)="placeBet('football', 'gana')">Apostar por Gana</ion-button>
+      <ion-button color="danger" expand="block" (click)="placeBet('football', 'pierde')">Apostar por Pierde</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Baloncesto: Boston Celtics vs Los Angeles Lakers</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Cantidad a apostar ($1 - $1000):</ion-label>
+        <ion-input
+          type="number"
+          [(ngModel)]="betAmountBasketball"
+          min="1"
+          max="1000"
+          placeholder="Introduce tu apuesta">
+        </ion-input>
+      </ion-item>
+      <ion-button color="success" expand="block" (click)="placeBet('basketball', 'gana')">Apostar por Gana</ion-button>
+      <ion-button color="danger" expand="block" (click)="placeBet('basketball', 'pierde')">Apostar por Pierde</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tenis: Marcelo Arevalo vs Mate Pavic</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Cantidad a apostar ($1 - $1000):</ion-label>
+        <ion-input
+          type="number"
+          [(ngModel)]="betAmountTennis"
+          min="1"
+          max="1000"
+          placeholder="Introduce tu apuesta">
+        </ion-input>
+      </ion-item>
+      <ion-button color="success" expand="block" (click)="placeBet('tennis', 'gana')">Apostar por Gana</ion-button>
+      <ion-button color="danger" expand="block" (click)="placeBet('tennis', 'pierde')">Apostar por Pierde</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,29 @@
+ion-card {
+  --background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ion-card-title {
+  color: #333;
+  font-weight: bold;
+}
+
+ion-button {
+  margin-top: 10px;
+  --background: linear-gradient(45deg, #43a047, #66bb6a);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.welcome h2 {
+  text-align: center;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.welcome p {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
